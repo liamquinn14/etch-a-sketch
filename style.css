@@ -1,0 +1,44 @@
+* {
+    background-color: rgb(190, 142, 252);
+}
+
+.container {
+    margin: auto;
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 36px;
+}
+
+span {
+    background-color: whitesmoke;
+    padding: 4px 8px;
+    border: 1px solid black;
+}
+
+.hover {
+    background-color: black
+}
