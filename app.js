@@ -1,5 +1,4 @@
 let colour
-
 function clearCanvas() {
     const boxes = document.querySelectorAll('.box');
     boxes.forEach((box) => {
@@ -17,12 +16,14 @@ let changeColour = (param) => {
 
 let generateGrid = () => {
 let container = document.getElementById('container')
-for (let i = 0; i < 16; i++) {
-    for (let j = 0; j < 15; j++) {
+for (let i = 0; i < 21; i++) {
+    for (let j = 0; j < 20; j++) {
         let div = document.createElement('div')
         div.classList.add('box')
         div.addEventListener('mouseover', (e) => {
             e.target.style.background = colour })
+        div.addEventListener('click', (e) => {
+            e.target.style.background = "whitesmoke" })
         container.appendChild(div)
         }
     } 
