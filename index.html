@@ -9,16 +9,17 @@
 <body>
     <h1> <span> Liam's Etch-a-Sketch! </span> </h1>
     <div class="button-container"> 
-    <button class="colour-buttons" onclick="changeColour('red')"> RED </button>
-    <button class="colour-buttons" onclick="changeColour('blue')"> BLUE </button>
-    <button class="colour-buttons" onclick="changeColour('green')"> GREEN </button>
-    <button class="colour-buttons" onclick="changeColour('black')"> BLACK </button>
-    <button class="colour-buttons" onclick="changeColour('yellow')"> YELLOW </button>
-    <button class="colour-buttons" onclick="changeColour('orange')"> ORANGE </button>
-    <button class="colour-buttons" onclick="changeColour('pink')"> PINK </button>
-    <button class="colour-buttons" onclick="changeColour('whitesmoke')"> ERASER </button>
-    <button class="colour-buttons" onclick="clearCanvas()"> CLEAR CANVAS </button>
+    <button class="colour-buttons" id="black" onclick="changeColour('Black')"> BLACK </button>
+    <button class="colour-buttons" id="red" onclick="changeColour('Red')"> RED </button>
+    <button class="colour-buttons" id="blue" onclick="changeColour('Blue')"> BLUE </button>
+    <button class="colour-buttons" id="green" onclick="changeColour('Green')"> GREEN </button>
+    <button class="colour-buttons" id="yellow" onclick="changeColour('Yellow')"> YELLOW </button>
+    <button class="colour-buttons" id="orange" onclick="changeColour('Orange')"> ORANGE </button>
+    <button class="colour-buttons" id="pink" onclick="changeColour('Pink')"> PINK </button>
+    <button class="colour-buttons" id="eraser" onclick="changeColour('whitesmoke')"> ERASER </button>
+    <button class="colour-buttons" id="clear-canvas" onclick="clearCanvas()"> CLEAR CANVAS </button>
     </div>
+    <div id="colour-display"> Colour = Black </div>
     <div class="container" id="container"> </div>
     <script src="app.js"> </script>
 </body>

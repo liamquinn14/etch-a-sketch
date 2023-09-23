@@ -1,4 +1,5 @@
-let colour = "black"
+let colour
+
 function clearCanvas() {
     const boxes = document.querySelectorAll('.box');
     boxes.forEach((box) => {
@@ -8,6 +9,9 @@ function clearCanvas() {
 
 let changeColour = (param) => {
     colour = param
+    colourDisplay.innerText = "Colour = " + colour
+    colourDisplay.style.backgroundColor = colour
+    colourDisplay.style.color = colour
     return colour
 }
 
@@ -26,4 +30,6 @@ for (let i = 0; i < 16; i++) {
 
 generateGrid()
 
+let colourDisplay = document.getElementById('colour-display')
 
+colour = changeColour("Black")
