@@ -1,4 +1,10 @@
 let colour = "black"
+function clearCanvas() {
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach((box) => {
+        box.style.backgroundColor = 'whitesmoke';
+    });
+}
 
 let changeColour = (param) => {
     colour = param
