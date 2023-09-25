@@ -17,8 +17,15 @@ let changeColour = (param) => {
     return colour
 }
 
+let clearAllCanvasses = () => {
+        let allContainers = document.querySelectorAll(".container")
+        let allBoxes = document.querySelectorAll(".box")
+        allBoxes.forEach((div) => div.remove())
+        allContainers.forEach((container) => container.remove())
+}
+
 let generateGrid = () => {
-let gridSquares = window.prompt("How many pixels wide would you like your canvas? Enter a number between 1 and 100. The higher the number, the smaller the pen.")
+let gridSquares = window.prompt("How many pixels wide would you like your canvas? Enter a number between 1 and 100. The higher the number, the smaller the pen.", "24")
 if (Number(gridSquares) > 100 || Number(gridSquares) < 1 ) {
     alert("Sorry that is an invalid number of pixels. Please enter a number between 1 and 100.")
     return
