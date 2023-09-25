@@ -18,9 +18,12 @@
     <button class="colour-buttons" id="pink" onclick="changeColour('Pink')"> PINK </button>
     <button class="colour-buttons" id="eraser" onclick="changeColour('whitesmoke')"> ERASER </button>
     <button class="colour-buttons" id="clear-canvas" onclick="clearCanvas()"> CLEAR CANVAS </button>
+    <button class="colour-buttons" id="create-canvas" onclick="generateGrid()"> CREATE NEW CANVAS </button>
     </div>
     <div id="colour-display"> Colour = Black </div>
-    <div class="container" id="container"> </div>
+    <div class="gen-button-holder" id="gen-button-holder">
+    <button class="colour-buttons" id="generate-button" onclick="generateGrid()"> Let's sketch! </button>
+    </div>
     <script src="app.js"> </script>
 </body>
 </html>
